@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+
+    "name": "Faster",
+    "description": "This extension allows for setting the speed of any html5 video",
+    "version": "1.0",
+    "permissions": ["contextMenus"],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["main.js"]
+    }]
+}
